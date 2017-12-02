@@ -1,0 +1,8 @@
+2017-12-03 00:13:30 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 2328 (/Users/Macx/spring-boot-mybatis-swagger/target/classes started by Macx in /Users/Macx/spring-boot-mybatis-swagger) 
+2017-12-03 00:13:30 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-03 00:13:30 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-03 00:13:35 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 20.448 seconds (JVM running for 22.073) 

@@ -1,0 +1,132 @@
+2017-12-02 22:20:09 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 1954 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 22:20:09 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 22:20:09 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 22:20:13 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 19.29 seconds (JVM running for 20.514) 
+2017-12-02 22:21:25 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 1960 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 22:21:25 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 22:21:25 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 22:21:29 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 18.68 seconds (JVM running for 19.207) 
+2017-12-02 22:21:53 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.OrderMapper.add : 
+ ==>  Preparing: INSERT INTO `order` ( id, orderName, price, productName ) VALUE ( ?, ?, ?, ? )  
+2017-12-02 22:21:53 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.OrderMapper.add : 
+ ==> Parameters: 0(Integer), 测试(String), 90.0(Double), 哈哈哈哈(String) 
+2017-12-02 22:21:53 [http-nio-8080-exec-2] DEBUG c.e.demo.mapper.OrderMapper.add : 
+ <==    Updates: 1 
+2017-12-02 22:22:09 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.findAll : 
+ ==>  Preparing: select * from `order`  
+2017-12-02 22:22:09 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.findAll : 
+ ==> Parameters:  
+2017-12-02 22:22:09 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.findAll : 
+ <==      Total: 6 
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==>  Preparing: select count(*) from `order`;  
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==> Parameters:  
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ <==      Total: 1 
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==>  Preparing: select * from `order` LIMIT ?,?  
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==> Parameters: 0(Integer), 20(Integer) 
+2017-12-02 22:22:21 [http-nio-8080-exec-4] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ <==      Total: 6 
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==>  Preparing: select count(*) from `order`;  
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==> Parameters:  
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ <==      Total: 1 
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==>  Preparing: select * from `order` LIMIT ?,?  
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==> Parameters: 0(Integer), 3(Integer) 
+2017-12-02 22:22:28 [http-nio-8080-exec-5] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ <==      Total: 3 
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==>  Preparing: select count(*) from `order`;  
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ ==> Parameters:  
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.count : 
+ <==      Total: 1 
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==>  Preparing: select * from `order` LIMIT ?,?  
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ ==> Parameters: 3(Integer), 3(Integer) 
+2017-12-02 22:22:39 [http-nio-8080-exec-6] DEBUG c.e.d.mapper.OrderMapper.findByPage : 
+ <==      Total: 3 
+2017-12-02 23:30:06 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 2010 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 23:30:06 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 23:30:06 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 23:30:10 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 19.928 seconds (JVM running for 20.55) 
+2017-12-02 23:30:53 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 2015 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 23:30:53 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 23:30:53 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 23:30:58 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 20.306 seconds (JVM running for 20.908) 
+2017-12-02 23:48:43 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` WHERE id = ?  
+2017-12-02 23:48:43 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: null 
+2017-12-02 23:49:59 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 2037 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 23:49:59 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 23:49:59 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 23:50:03 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 18.514 seconds (JVM running for 19.108) 
+2017-12-02 23:50:22 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET id = ? , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:50:22 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: 1(Integer), string(String), 0.0(Double), string(String), 1(Integer) 
+2017-12-02 23:50:22 [http-nio-8080-exec-1] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ <==    Updates: 0 
+2017-12-02 23:54:17 [main] INFO  com.example.demo.DemoApplication : 
+ Starting DemoApplication on MacxdeMacBook-Pro.local with PID 2053 (/Users/Macx/jpa/demo/target/classes started by Macx in /Users/Macx/jpa/demo) 
+2017-12-02 23:54:17 [main] DEBUG com.example.demo.DemoApplication : 
+ Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE 
+2017-12-02 23:54:17 [main] INFO  com.example.demo.DemoApplication : 
+ No active profile set, falling back to default profiles: default 
+2017-12-02 23:54:20 [main] INFO  com.example.demo.DemoApplication : 
+ Started DemoApplication in 18.346 seconds (JVM running for 18.904) 
+2017-12-02 23:55:16 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET id = ? , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:55:16 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: 0(Integer), string(String), 0.0(Double), string(String), 0(Integer) 
+2017-12-02 23:55:16 [http-nio-8080-exec-7] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ <==    Updates: 0 
+2017-12-02 23:55:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET id = ? , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:55:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: 10(Integer), string(String), 0.0(Double), string(String), 10(Integer) 
+2017-12-02 23:55:58 [http-nio-8080-exec-3] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ <==    Updates: 0 
+2017-12-02 23:56:07 [http-nio-8080-exec-4] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:56:07 [http-nio-8080-exec-4] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: string(String), 0.0(Double), string(String), null 
+2017-12-02 23:56:14 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:56:14 [http-nio-8080-exec-5] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: string(String), 0.0(Double), string(String), null 
+2017-12-02 23:56:35 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==>  Preparing: UPDATE `order` SET id = ? , orderName = ? , price = ? , productName = ? WHERE id = ?  
+2017-12-02 23:56:35 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ ==> Parameters: 1212(Integer), string(String), 0.0(Double), string(String), 1212(Integer) 
+2017-12-02 23:56:35 [http-nio-8080-exec-6] DEBUG c.e.demo.mapper.OrderMapper.update : 
+ <==    Updates: 0 

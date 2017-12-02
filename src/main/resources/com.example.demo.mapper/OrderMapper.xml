@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.mapper.OrderMapper">
+    <insert id="add" parameterType="com.example.demo.po.Order"  useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `order`
+        (
+        id,
+        orderName,
+        price,
+        productName
+        )
+        VALUE
+        (
+        #{id},
+        #{orderName},
+        #{price},
+        #{productName}
+        )
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.Integer">
+        DELETE FROM `order` WHERE id = #{id}
+    </delete>
+
+    <update id="update" parameterType="com.example.demo.po.Order">
+        UPDATE `order`
+        <set>
+            <if test="id!=null">
+                id = #{id}
+            </if>
+            <if test="orderName!=null">
+            ,    orderName = #{orderName}
+            </if>
+            <if test="price!=null">
+            ,    price = #{price}
+            </if>
+            <if test="productName!=null">
+            ,   productName = #{productName}
+            </if>
+
+        </set>
+        WHERE id = #{id}
+    </update>
+
+    <select id="findOne" parameterType="java.lang.Integer" resultType="com.example.demo.po.Order">
+        select *
+        from `order`
+        WHERE  id = #{value};
+    </select>
+
+    <!--映射结果集resultMap-->
+    <select id="findAll" resultMap="resultList">
+        select *
+        from `order`
+    </select>
+
+    <select id="findByPage" parameterType="java.lang.Integer" resultType="com.example.demo.po.Order">
+        select *
+        from `order`
+        LIMIT #{page},#{limit}
+    </select>
+
+    <select id="count" resultType="java.lang.Integer">
+        select count(*)
+        from `order`;
+    </select>
+
+    <resultMap id="resultList" type="com.example.demo.po.Order">
+        <!--解释 column = id  对应数据库中 的id  property 中对应java po中的成员变量   -->
+        <id column="id" property="id" />
+        <result column="orderName" property="orderName" />
+        <result column="price" property="price" />
+        <result column="productName" property="productName" />
+    </resultMap>
+
+
+</mapper>
